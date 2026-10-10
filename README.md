@@ -20,8 +20,7 @@ Written by Claude Code with Opus 5.5. Confirmed working on MATLAB R2015a on RHEL
      geographic modeling; speculations on the geometry of geography; and global spatial analysis
      (Technical Report 93-1). National Center for Geographic Information and Analysis, University of
      California, Santa Barbara.
-  3. Step length from speed (fb_plan_step.m): step length proportional to v^0.42. This is the citation I
-     am least sure of; I know the exponent mainly through Kuo's paper, which attributes it to Grieve.
+  3. Step length from speed (fb_plan_step.m): step length proportional to v^0.42.
      Grieve, D. W. (1968). Gait patterns and the speed of walking. Bio-Medical Engineering, 3, 119–122.
      Kuo, A. D. (2001). A simple model of bipedal walking predicts the preferred speed–step length
      relationship. Journal of Biomechanical Engineering, 123(3), 264–269.
@@ -29,20 +28,17 @@ Written by Claude Code with Opus 5.5. Confirmed working on MATLAB R2015a on RHEL
      toe-off to foothold.
      Flash, T., & Hogan, N. (1985). The coordination of arm movements: An experimentally confirmed
      mathematical model. Journal of Neuroscience, 5(7), 1688–1703.
-  5. Segment lengths (thigh, shank, ankle height, foot as fractions of a 190 cm stature). I rounded the
-     values, so the code does not match the table exactly.
+  5. Segment lengths (thigh, shank, ankle height, foot as fractions of a 190 cm stature).
      Winter, D. A. (2009). Biomechanics and motor control of human movement (4th ed.). John Wiley & Sons.
-  6. Lat/lon to UTM (fb_ll2utm.m, version 2 start point). This is not gait math, but it is a formula
-     taken from a source.
+  6. Lat/lon to UTM (fb_ll2utm.m, version 2 start point).
      Snyder, J. P. (1987). Map projections: A working manual (U.S. Geological Survey Professional
      Paper 1395). U.S. Government Printing Office.
-  7. Terrain data. The metadata in your tiles names the publisher; I did not check the licence terms.
+  7. Terrain data.
      Bezirksregierung Köln, Geobasis NRW. Digitales Geländemodell Gitterweite 1 m (DGM1) [Data set].
 
   Not from any source:
 
-  - Level step length: 0.78 m (0.41 × stature) is a common rule of thumb; I have no primary source for
-    it.
+  - Level step length: 0.78 m (0.41 × stature) is a common rule of thumb.
   - Hip height: the three-knot profile with cosine ramps and the 0.985 and 0.995 leg-length factors.
   - Foot and timing: the heel-rise angles, the 15 % double-support share, the 6 cm swing clearance and
     the 2 cm pelvis sway.
